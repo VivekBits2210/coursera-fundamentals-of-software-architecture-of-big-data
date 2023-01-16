@@ -4,8 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.collective.articles.ArticleDataGateway;
 import io.collective.articles.ArticleRecord;
 import io.collective.articles.ArticlesController;
+import io.collective.endpoints.EndpointTask;
 import io.collective.restsupport.BasicApp;
 import io.collective.restsupport.NoopController;
+import io.collective.workflow.WorkScheduler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
@@ -20,9 +22,9 @@ public class App extends BasicApp {
     public void start() {
         super.start();
 
-        { // todo - start the endpoint worker
+        // todo - start the endpoint worker
+//        WorkScheduler<EndpointTask> scheduler = new WorkScheduler<>(finder, workers, 300);
 
-        }
     }
 
     public App(int port) {
