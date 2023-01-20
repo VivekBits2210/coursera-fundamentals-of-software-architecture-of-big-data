@@ -1,0 +1,9 @@
+numpy==1.21.0
+scikit-learn==1.0.2
+Flask==2.1.1
+mypy==0.950
+typing-extensions==4.1.1
+requests==2.27.1
+types-requests==2.27.22
+responses==0.20.0
+dacite==1.6.0
