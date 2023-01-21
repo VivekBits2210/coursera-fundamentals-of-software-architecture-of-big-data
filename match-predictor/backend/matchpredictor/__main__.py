@@ -15,7 +15,7 @@ port = os.environ.get('PORT', 5001)
 app_environment = AppEnvironment(
     csv_location=os.environ.get('CSV_LOCATION', 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'),
     season=2023,
-    football_data_api_key=require_env('FOOTBALL_DATA_API_KEY'),
+    football_data_api_key='football-data-key-100',
 )
 
 create_app(app_environment).run(debug=True, host="0.0.0.0", port=int(port))
